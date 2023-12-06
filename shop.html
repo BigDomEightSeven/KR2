@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop</title>
+</head>
+<body>
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li id="shop"><a name="start" href="shop.html">Shop</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+	</ul>
+
+	<form action="https://www.google.com/search" target="_blank" method="GET">
+		<table>
+			<tr>
+				<td>
+					<img style="display:list-item" src=skov1.jpg>
+					<h5 style="display:inline">Сковородка 1</h5>
+					<p>Цена: 1100</p>
+					<input type="number" value="0" min="0" id="kol1" step="1">
+				</td>
+
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 1200</p>
+					<input type="number" value="0" min="0" id="kol2" step="1">
+				</td>
+
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 1300</p>
+					<input type="number" value="0" min="0" id="kol3" step="1">
+				</td>
+
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 1400</p>
+					<input type="number" value="0" min="0" id="kol4" step="1">
+				</td>
+
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 1500</p>
+					<input type="number" value="0" min="0" id="kol5" step="1">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 1600</p>
+					<input type="number" value="0" min="0" id="kol6" step="1">
+				</td>
+
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 1700</p>
+					<input type="number" value="0" min="0" id="kol7" step="1">
+				</td>
+
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 1800</p>
+					<input type="number" value="0" min="0" id="kol8" step="1">
+				</td>
+
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 1900</p>
+					<input type="number" value="0" min="0" id="kol9" step="1">
+				</td>
+
+				<td>
+					<img style="display:list-item" src=skov2.jpeg>
+					<h5 style="display:inline">Сковородка 2</h5>	
+					<p>Цена: 2000</p>
+					<input type="number" value="0" min="0" id="kol10" step="1">
+				</td>
+			</tr>
+		</table>
+		<input id="price" value="Итого:" name="q" readonly>
+		<button id="submitButton" type="submit"> Заказать </button>
+	</form>
+
+</body>
+</html>
+
+<style type="text/css">
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		background-color: #222;
+	}
+
+	#shop {
+		background-color: #111;
+	}
+
+	img {
+		width: 20%;
+		height:20px;
+	}
+
+	table {
+		border-spacing: 50px;
+	}
+</style>
+
+<script type="text/javascript">
+	document.getElementById('submitButton').addEventListener('click', function () {
+        var count1 = Number(document.getElementById('kol1').value);
+        var price1 = Number(document.getElementsByTagName('p')[0].innerHTML.substring(5))
+
+        var count2 = Number(document.getElementById('kol2').value);
+        var price2 = Number(document.getElementsByTagName('p')[1].innerHTML.substring(5))
+
+        var count3 = Number(document.getElementById('kol3').value);
+        var price3 = Number(document.getElementsByTagName('p')[2].innerHTML.substring(5))
+
+        var count4 = Number(document.getElementById('kol4').value);
+        var price4 = Number(document.getElementsByTagName('p')[3].innerHTML.substring(5))
+
+        var count5 = Number(document.getElementById('kol5').value);
+        var price5 = Number(document.getElementsByTagName('p')[4].innerHTML.substring(5))
+
+        var count6 = Number(document.getElementById('kol6').value);
+        var price6 = Number(document.getElementsByTagName('p')[5].innerHTML.substring(5))
+
+        var count7 = Number(document.getElementById('kol7').value);
+        var price7 = Number(document.getElementsByTagName('p')[6].innerHTML.substring(5))
+
+        var count8 = Number(document.getElementById('kol8').value);
+        var price8 = Number(document.getElementsByTagName('p')[7].innerHTML.substring(5))
+
+        var count9 = Number(document.getElementById('kol9').value);
+        var price9 = Number(document.getElementsByTagName('p')[8].innerHTML.substring(5))
+
+        var count10 = Number(document.getElementById('kol10').value);
+        var price10 = Number(document.getElementsByTagName('p')[9].innerHTML.substring(5))
+
+
+
+        console.log(count1,price1,count2,price2,count3,price3,count4,price4,count5,price5,count6,price6,count7,price7,count8,price8,count9,price9,count10,price10)
+
+        document.getElementById('price').value = "Итого: " + String(count1*price1+count2*price2+count3*price3+count4*price4+count5*price5+count6*price6+count7*price7+count8*price8+count9*price9+count10*price10)
+
+        });
+
+</script>
